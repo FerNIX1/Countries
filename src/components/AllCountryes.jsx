@@ -14,6 +14,7 @@ export const AllCountryes = () => {
   return (
     <>
     <div className="row">
+      <h1>Bienvenido</h1>
     {countries ? countries.map((country,index)=>{ return (
        <div key={index} className="card col-4 mb-5 ms-5" style={{ width: '18rem' }}>
        <img src={country.flags.svg} className="card-img-top" alt="..." />
