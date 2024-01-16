@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 
 export const AllCountryes = () => {
       const [countries,setcountries]=useState(null)
@@ -21,7 +21,7 @@ export const AllCountryes = () => {
        <div className="card-body">
          <h5 className="card-title">{country.name.common}</h5>
          <p className="card-text"></p>
-         <a href="#" className="btn btn-primary">Go somewhere</a>
+         <Link to={`https://www.google.com/search?q=${country.name.common}`}>info</Link>
        </div>
      </div>
     )}):<h1>loading</h1>}
